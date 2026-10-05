@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto 03</title>
+    <title>Proyecto 03 - Registro</title>
     <link rel="icon" href="../images/favicon_io/favicon.ico">
     <!-- Google Icons & Fonvicon.its -->
     <link rel="stylesheet"
@@ -18,16 +18,55 @@
 
 <body>
     <header class="header-content">
-    <nav class="nav-header">
-        <ul class="nav-list" id="nav-list">
-        </ul>
-    </nav>
-</header>
+        <nav class="nav-header">
+            <ul class="nav-list" id="nav-list">
+            </ul>
+        </nav>
+    </header>
 
     <main class="main-content">
+        <h1>Datos del estudiante</h1>
+
+        <!-- INPUT DEL NOMBRE -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre">
+
+        <br><br>
+
+        <!-- INPUT DEL APELLIDO -->
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido">
+
+        <br><br>
+
+        <!-- INPUT DE LA LIBRETA UNIVERSITARIA -->
+        <label for="libreta">Libreta Universitaria:</label>
+        <input type="text" id="libreta">
+
+        <br><br>
+
+        <!-- BOTÓN -->
+        <button id="mostrarDatos">Mostrar datos</button>
+
+        <br><br>
+
+        <!-- TABLA -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Libreta Universitaria</th>
+                </tr>
+            </thead>
+            <tbody id="tablaDatos">
+            </tbody>
+        </table>
     </main>
 
     <script type="module" src="../js/header.js"></script>
+    <!-- Conexión con tu script del ejercicio 01 -->
+    <script type="module" src="../js/ejercicio01.js"></script>
     
 </body>
 </html>
