@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto 03</title>
+    <title>Calculadora</title>
     <link rel="icon" href="../images/favicon_io/favicon.ico">
     <!-- Google Icons & Fonvicon.its -->
     <link rel="stylesheet"
@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/ejercicio3.css">
 </head>
 
 <body>
@@ -25,9 +26,16 @@
 </header>
 
     <main class="main-content">
+        <section class="calculator">
+            <h1 class="title">Calculadora de Precios con IVA</h1>
+            <p class="subtitle">Los productos del kiosco están cargados sin IVA. Calculá el precio final con el 21% incluido.</p>
+            <button id="btnCalcular" class="btn">Calcular Precios con IVA (21%)</button>
+            <div id="resultado" aria-live="polite"></div>
+        </section>
     </main>
 
     <script type="module" src="../js/header.js"></script>
+    <script src="../js/consgina3.js"></script>
     
 </body>
 </html>
