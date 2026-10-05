@@ -31,6 +31,11 @@ boton.addEventListener("click", () => {
     // 4. Unir las celdas dentro de una fila <tr>
     const fila = `<tr>${celdas.join("")}</tr>`;
 
-    // 5. Insertar la fila dentro de la tabla
-    tablaDatos.innerHTML = fila;
+    // 5. Acumular la nueva fila dentro de la tabla (usando += para no borrar las anteriores)
+    tablaDatos.innerHTML += fila;
+
+    // 6. Limpiar los inputs después de agregar los datos (opcional)
+    inputNombre.value = "";
+    inputApellido.value = "";
+    inputLibreta.value = "";
 });
