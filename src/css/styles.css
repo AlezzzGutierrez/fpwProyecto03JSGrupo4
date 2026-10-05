@@ -97,3 +97,14 @@ button{
     align-items: center;
     padding: 20px;
 }
+
+/* Estilo para los botones en la página de fondo/modo */
+#btn-blanco, #btn-oscuro {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 2px solid #7A9A8B;
+    margin: 10px;
+    background-color: #FFFFFF;
+}

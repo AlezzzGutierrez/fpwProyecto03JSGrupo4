@@ -1,0 +1,60 @@
+/* Transición suave para los cambios de color */
+body, header, button, h1, h2, h3, p, a {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Estilo base de tus botones */
+#btn-blanco, #btn-oscuro, #btn-salvia {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 2px solid #7A9A8B;
+    margin: 10px;
+    background-color: #FFFFFF;
+    color: #4B6661;
+}
+
+/* Modo Noche */
+body.modo-noche {
+    background-color: #1E2421 !important;
+}
+
+body.modo-noche *,
+body.modo-noche p,
+body.modo-noche a,
+body.modo-noche .title {
+    color: #E2F0D9 !important;
+}
+
+body.modo-noche .header-content {
+    background-color: #2A3631 !important;
+}
+
+body.modo-noche button {
+    background-color: #2A3631 !important;
+    color: #E2F0D9 !important;
+    border-color: #4A6356 !important;
+}
+
+/* Modo Salvia */
+body.modo-salvia {
+    background-color: #2C3E35 !important;
+}
+
+body.modo-salvia *,
+body.modo-salvia p,
+body.modo-salvia a,
+body.modo-salvia .title {
+    color: #EBD8B1 !important;
+}
+
+body.modo-salvia .header-content {
+    background-color: #4A6356 !important;
+}
+
+body.modo-salvia button {
+    background-color: #4A6356 !important;
+    color: #EBD8B1 !important;
+    border-color: #7A9A8B !important;
+}

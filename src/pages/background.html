@@ -4,30 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto 03</title>
-    <link rel="icon" href="/src/images/favicon_io/favicon.ico">
-    <!-- Google Icons & Fonvicon.its -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Proyecto 03 - Modo</title>
+
+    <!-- Google Icons & Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/src/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS General y CSS propio de background -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/background.css">
 </head>
 
 <body>
     <header class="header-content">
-    <nav class="nav-header">
-        <ul class="nav-list" id="nav-list">
-        </ul>
-    </nav>
-</header>
+        <nav class="nav-header">
+            <ul class="nav-list" id="nav-list">
+                <!-- Tu navegador generado dinámicamente -->
+            </ul>
+        </nav>
+    </header>
 
     <main class="main-content">
+        <h1 class="title">Seleccionar Modo</h1>
+        <div>
+            <button id="btn-blanco">MODO DIA</button>
+            <button id="btn-oscuro">MODO NOCHE</button>
+            <button id="btn-salvia">MODO SALVIA</button>
+        </div>
     </main>
 
-    <script type="module" src="/src/js/header.js"></script>
-    
+    <!-- JS del Header y tu JS propio -->
+    <script type="module" src="../js/header.js"></script>
+    <script type="module" src="../js/background.js"></script>
 </body>
 </html>
