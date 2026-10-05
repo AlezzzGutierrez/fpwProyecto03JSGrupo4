@@ -1,5 +1,29 @@
 
 
+# Salas Yesica Fabiana
+## Proyecto 03 -Grupo N°4/ Ejercicio 02-Modo
+## Fecha de Actualizacion: 05/10/26
+
+Implementacion de un selector de modos de color (dia, Noche, Salvia) para la pagina background.html mediante manipulacion del DOM y eventos de JavaScript. Los cambios de estilo se aplican al <body> segun el boton presionado, manteniendo una experiencia visual mediante clases de CSS.
+
+## Metodos y elementos utilizados 
+* document.getElementById(): selecciona los botones de accion.
+* addEvenListener(): detecta el evento click en cada uno de los botones para ejecutar elcambio de modo.
+* DOMContentLoaded: asegura la correcta carga de DOM antes de inicializar la logic de los scripts.
+* classList.add(): gestiona dinamicamente la aplicacion y limpieza de clases de modo.
+* <button>: elementos iterativos para disparar los modos de color.
+* transition: propiedad CSS empleada para lograr cambios de colores sueaves entre estados.
+
+## Archivos creados y / o modificados
+src/js/background.js
+src/css/background.css
+
+# Modificados
+src/pages/background.html
+
+## Uso de IA
+si se utilizo Gemini como copiloto y herramienta de apoyo durante el desarrollo del ejercicio. 
+Su principal ayuda se concentro en corregir insconsistencias en la vinculacion de IDs entre el HTML, JS y CSS, tambien ayudo a resolver conflictos de guardado local en el editor, y la sincronizacion con la rama principal que poseia una version actualizada del repositorio grupal.
 
 # [Robert Facundo]
 
@@ -149,5 +173,3 @@ Estructuración general del proyecto mediante un contenedor principal (*Home*) q
 * **Modificados:** `src/index.html` (estructura principal y contenedor del header dinámico).
 
 **Uso IA:** Sí: como copiloto (interacción), para la evaluación de estructura, optimización del código, selección de paleta de colores y corrección de redireccionamiento de rutas absolutas para evitar ruptura de links en el menú.
-
-
