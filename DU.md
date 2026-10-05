@@ -1,5 +1,41 @@
+# Nayla Leiva
 
+## Proyecto 03 - Grupo N°4 / Optimización de Navegación y Renderizado Dinámico
 
+## Fecha de Actualización: 05/10/2026
+
+Ajustes en la arquitectura de navegación. Se estructuró un script específico para el manejo del header en las páginas secundarias garantizando el uso de rutas relativas, se agregó un html para la vista principal (*Home*) y se modularizó la generación dinámica de las tarjetas de los integrantes en la sección *Nosotros* mediante JavaScript.
+
+### Métodos y elementos utilizados
+
+- `headerPages.js`: Creación de un script independiente para inyectar el menú de navegación en las vistas dentro del directorio `/pages`, asegurando el direccionamiento con rutas relativas. Esta modificación se realizó ante el riesgo de fallos con `window.location` entre distintos entornos de ejecución.
+- `header.js`: Se conservó para la gestión del menú en la vista raíz (`index.html`).
+- `about.js`: Renderizado dinámico mediante JavaScript de las tarjetas del equipo en `about.html`, recorriendo los datos de los integrantes e insertando las imágenes de perfil agregadas para cada miembro.
+- `index.html`: Se simplificó la estructura a un HTML base que actúa como home del proyecto.
+
+### Archivos (Modificados, Creados, Eliminados)
+
+**Creados:**
+- `src/js/headerPages.js`
+- `src/js/about.js`
+- `src/images/` (imágenes de perfil de cada integrante del grupo)
+
+**Modificados:**
+- `src/index.html`
+- `src/js/header.js`
+- `src/pages/about.html`
+- `src/pages/background.html`
+- `src/pages/calculator.html`
+- `src/pages/movies.html`
+- `src/pages/register.html`
+- `src/pages/shopping.html`
+
+**Eliminados:** Ninguno
+
+### Uso de IA
+
+Sí: se utilizó Gemini como copiloto (interacción) y herramienta de apoyo durante el desarrollo.
+Se empleó para evaluar la estructura general, optimizar el código, corregir el direccionamiento de rutas relativas evitando la ruptura de links en el menú y asistir en la implementación del renderizado dinámico de tarjetas, solucionó dudas respecto al css para evitar desbordes de pantalla.
 
 # [Robert Facundo]
 
@@ -149,5 +185,3 @@ Estructuración general del proyecto mediante un contenedor principal (*Home*) q
 * **Modificados:** `src/index.html` (estructura principal y contenedor del header dinámico).
 
 **Uso IA:** Sí: como copiloto (interacción), para la evaluación de estructura, optimización del código, selección de paleta de colores y corrección de redireccionamiento de rutas absolutas para evitar ruptura de links en el menú.
-
-
