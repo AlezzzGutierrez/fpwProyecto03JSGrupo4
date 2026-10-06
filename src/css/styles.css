@@ -20,7 +20,8 @@ ul {
 }
 
 p,
-a, label {
+a,
+label {
     font-size: 1.1rem;
     line-height: 1.5;
 }
@@ -48,7 +49,7 @@ a:hover {
     margin-bottom: 25px;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
@@ -60,11 +61,11 @@ button{
 
 .nav-list {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    
+
 }
 
 .nav-link {
@@ -75,7 +76,7 @@ button{
     border-bottom: 3px solid transparent;
 }
 
-.nav-item .nav-link:hover{
+.nav-item .nav-link:hover {
     border-bottom: solid 3px #EBD8B1;
 }
 
@@ -96,4 +97,31 @@ button{
     justify-items: center;
     align-items: center;
     padding: 20px;
+}
+
+.main-image {
+    max-width: 85%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.lectorer-card {
+    background-color: #ffffff;
+    border: 1px solid #d0ded4;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.lectorer-card h3 {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #e2ece6;
+    padding-bottom: 0.4rem;
+}
+
+.lectorer-card p {
+    margin: 0.5rem 0;
 }

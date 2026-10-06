@@ -2,37 +2,37 @@
 const elementsNav = [
     {
         title: 'Inicio',
-        url: './index.html',
+        url: '../index.html',
         icon: 'home'
     },
     {
         title: 'Nosotros',
-        url: './pages/about.html',
+        url: './about.html',
         icon: 'diversity_3'
     },
     {
         title: 'Registro',
-        url: './pages/register.html',
+        url: './register.html',
         icon: 'school'
     },
     {
         title: 'Modo',
-        url: './pages/background.html',
+        url: './background.html',
         icon: 'routine'
     },
     {
         title: 'Calculadora',
-        url: './pages/calculator.html',
+        url: './calculator.html',
         icon: 'calculate'
     },
     {
         title: 'Peliculas',
-        url: './pages/movies.html',
+        url: './movies.html',
         icon: 'movie'
     },
     {
         title: 'Carrito',
-        url: './pages/shopping.html',
+        url: './shopping.html',
         icon: 'shopping_cart'
     }
 ];
