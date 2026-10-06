@@ -1,0 +1,152 @@
+/*--- REGISTRO DE ESTUDIANTE ---*/
+
+.main-content {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+gap: 8px;
+padding: 30px 20px;
+}
+
+/*--- TÍTULO ---*/
+
+.main-content h1 {
+text-align: center;
+font-size: 2rem;
+font-weight: 800;
+margin-bottom: 8px;
+}
+
+/*--- LABELS ---*/
+
+.main-content label {
+font-size: 0.9rem;
+font-weight: 600;
+line-height: 1.2;
+margin-top: 3px;
+width: 280px;
+}
+
+/*--- INPUTS ---*/
+
+.main-content input {
+width: 280px;
+padding: 9px 12px;
+border: 2px solid #7A9A8B;
+border-radius: 8px;
+background-color: #FFFFFF;
+font-family: "Montserrat", sans-serif;
+font-size: 0.95rem;
+color: #4B6661;
+outline: none;
+transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.main-content input:focus {
+border-color: #4B6661;
+box-shadow: 0 0 0 3px #EBD8B1;
+}
+
+/*--- BOTÓN ---*/
+
+.main-content button {
+padding: 10px 22px;
+margin-top: 5px;
+border: none;
+border-radius: 8px;
+background-color: #7A9A8B;
+color: #FFFFFF;
+font-family: "Montserrat", sans-serif;
+font-size: 0.95rem;
+font-weight: 700;
+cursor: pointer;
+transition: background-color 0.2s, transform 0.2s;
+}
+
+.main-content button:hover {
+background-color: #4B6661;
+transform: translateY(-2px);
+}
+
+.main-content button:active {
+transform: translateY(0);
+}
+
+/*--- TABLA ---*/
+
+.main-content table {
+width: min(850px, 90%);
+margin-top: 20px;
+border-collapse: separate;
+border-spacing: 0;
+background-color: #FFFFFF;
+border: 2px solid #7A9A8B;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 4px 12px rgba(75, 102, 97, 0.15);
+}
+
+/* Encabezado */
+
+.main-content th {
+padding: 13px 15px;
+background-color: #7A9A8B;
+color: #FFFFFF;
+font-size: 0.9rem;
+font-weight: 700;
+text-align: center;
+}
+
+/* Celdas */
+
+.main-content td {
+padding: 11px 15px;
+text-align: center;
+border-top: 1px solid #D5E2D0;
+color: #4B6661;
+font-size: 0.9rem;
+}
+
+/* Filas agregadas */
+
+.main-content tbody tr {
+background-color: #FFFFFF;
+transition: background-color 0.2s;
+}
+
+.main-content tbody tr:hover {
+background-color: #F2F7ED;
+}
+
+
+
+@media (max-width: 600px) {
+
+
+.main-content {
+    padding: 20px 10px;
+}
+
+.main-content h1 {
+    font-size: 1.6rem;
+}
+
+.main-content label,
+.main-content input {
+    width: 100%;
+    max-width: 280px;
+}
+
+.main-content table {
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.main-content th,
+.main-content td {
+    padding: 9px 5px;
+}
+
+
+}
