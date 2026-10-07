@@ -59,26 +59,34 @@ const btnCalcTotal = document.getElementById('btn-calc-total');
 const detalleElement = document.getElementById('detalle');
 const totalElement = document.getElementById('total');
 
-/* --- MOSTRAR TODO --- */
+function limpiarResumen() {
+    if (detalleElement) detalleElement.textContent = '';
+    if (totalElement) totalElement.textContent = '';
+}
+
+/* --- MOSTRAR PRODUCTOS --- */
 if (btnShowAll) {
     btnShowAll.addEventListener('click', () => {
+        limpiarResumen();
         renderProducts(productsShopping);
     });
 }
 
-/* --- FILTRAR POR STOCK --- */
+/* --- FILTRAR PRODUCTOS EN STOCK --- */
 if (btnFilterStock) {
     btnFilterStock.addEventListener('click', () => {
+        limpiarResumen();
         const productosEnStock = productsShopping.filter(item => item.inStock === true);
         renderProducts(productosEnStock);
     });
 }
 
-/* --- COMPRAR PRODUCTOS EN STOCK --- */
+/* --- MOSTRAR PRODUCTOS EN STOCK --- */
 if (btnBuyStock) {
     btnBuyStock.addEventListener('click', () => {
-        const productosEnStock = productsShopping.filter(item => item.inStock === true);
+        limpiarResumen();
 
+        const productosEnStock = productsShopping.filter(item => item.inStock === true);
         const detalleProductos = productosEnStock.map(item => `${item.product} ($${item.price})`);
 
         const listaTexto = detalleProductos.reduce((acc, prod, index) => {
@@ -94,10 +102,10 @@ if (btnBuyStock) {
 /* --- CALCULAR TOTAL --- */
 if (btnCalcTotal) {
     btnCalcTotal.addEventListener('click', () => {
+        limpiarResumen();
+
         const productosEnStock = productsShopping.filter(item => item.inStock === true);
-
         const precios = productosEnStock.map(item => item.price);
-
         const totalCalculado = precios.reduce((acc, price) => acc + price, 0);
 
         if (detalleElement) {

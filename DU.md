@@ -4,6 +4,43 @@
 
 ## Fecha de Actualización: 05/10/2026
 
+Se adjunta la entrega con la integración del **Ejercicio 5 (`shopping`)**, compuesto por su lógica en JS, hoja de estilos CSS y assets de imágenes asociados.
+
+### Métodos y elementos utilizados
+
+- `headerPages.js`: Script independiente para inyectar dinámicamente el menú de navegación en todas las vistas dentro del directorio `/pages`, garantizando el correcto direccionamiento mediante rutas relativas.
+- `header.js`: Mantenido para la gestión y carga del menú en la vista raíz (`index.html`).
+- `shopping.js`: Implementación de la lógica del Ejercicio 5. Incluye la estructura de datos (`productsShopping`), renderizado dinámico de tarjetas (`renderProducts`), manejo de eventos en los 4 botones principales y la aplicación de métodos de arreglos (`filter`, `map`, `reduce`) para el filtrado por stock, armado del texto del combo y cálculo del total.
+- `limpiarResumen()`: Función auxiliar agregada en JS para realizar la limpieza y reseteo automático de los textos en el DOM (`#detalle` y `#total`) al hacer clic en cualquiera de los botones de interacción.
+
+### Archivos (Modificados, Creados, Eliminados)
+
+**Creados:**
+- `src/js/shopping.js`
+- `src/css/shopping.css`
+- `src/images/products/` (imágenes asociadas a la sección de productos)
+
+**Modificados:**
+- `src/pages/shopping.html`
+
+**Eliminados:** Ninguno
+
+### Uso de IA
+
+**Sí:** Se utilizó Gemini como copiloto e instrumento de apoyo durante el desarrollo.
+
+Se empleó para:
+1. Evaluar la estructura general y optimizar el código JavaScript.
+2. Corregir el orden de ejecución en la captura de elementos del DOM al hacer clic en los botones (inicialmente se presentaban errores por realizar la definición de algunas variables que usaban funciones antes de ser declaradas).
+3. Asistir en la correcta implementación de métodos de array en JS (`filter`, `map`, `reduce`) y en la función de limpieza automática del texto en pantalla.
+4. Resolver dudas de CSS orientadas a corregir desbordes de pantalla y maquetado de tarjetas.
+
+# Nayla Leiva
+
+## Proyecto 03 - Grupo N°4 / Optimización de Navegación y Renderizado Dinámico
+
+## Fecha de Actualización: 05/10/2026
+
 Ajustes en la arquitectura de navegación. Se estructuró un script específico para el manejo del header en las páginas secundarias garantizando el uso de rutas relativas, se agregó un html para la vista principal (*Home*) y se modularizó la generación dinámica de las tarjetas de los integrantes en la sección *Nosotros* mediante JavaScript.
 
 ### Métodos y elementos utilizados
